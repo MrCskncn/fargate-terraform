@@ -420,7 +420,7 @@ resource "aws_codebuild_project" "limonultation" {
 
   source {
     type                = "GITHUB"
-    location            = "https://github.com/LimonCloud/fargate-demo-source"
+    location            = "https://github.com/MrCskncn/fargate-app"
     git_clone_depth     = 1
     report_build_status = true
 
