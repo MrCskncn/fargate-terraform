@@ -17,7 +17,7 @@ $ terraform plan
 $ terraform apply
 ```
 
-5- Bir de şöyle bir repomuz var https://github.com/MrCskncn/fargate-app.git, bu repo'da da örnek bir Java uygulaması bulunuyor. Buradan buildspec.yaml gibi bilgileri kulanıyor olacağız, o yüzden iki repoyu da git clone yapalım. (Sunum anına kadar güncellenebilirler, dikkat!)
+5- Bir de şöyle bir repomuz var https://github.com/MrCskncn/fargate-app.git, bu repo'da da örnek bir Java uygulaması bulunuyor. Buradan buildspec.yaml gibi bazı dosyalarda değişiklikler yapıyor olacağız, o yüzden iki repoyu da git clone yapalım. (Sunum anına kadar güncellenebilirler, dikkat!)
 
 Sunumda görüşürüz!
 
