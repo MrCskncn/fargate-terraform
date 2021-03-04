@@ -275,7 +275,10 @@ resource "aws_ecs_service" "limon-api" {
   }
   
   lifecycle {
-    ignore_changes = [desired_count]
+    ignore_changes = [
+      desired_count,
+      task_definition
+    ]
   }
 
   depends_on = [aws_alb_listener.http]
@@ -384,7 +387,7 @@ resource "aws_codebuild_project" "limonultation" {
   build_timeout  = "30"
   queued_timeout = "480"
   service_role   = aws_iam_role.codebuild_svc_role.arn
-  source_version = "develop"
+  source_version = "master"
 
   artifacts {
     type = "NO_ARTIFACTS"
